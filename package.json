@@ -1,0 +1,31 @@
+{
+  "name": "barneyzin",
+  "version": "1.0.0",
+  "description": "Apenas um simples bot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.3",
+    "@greencoast/logger": "^1.0.1",
+    "canvas": "^2.6.1",
+    "discord.js": "^12.5.1",
+    "discord.js-pagination": "^1.0.3",
+    "ffmpeg-static": "^4.2.7",
+    "fs": "0.0.1-security",
+    "images-scraper": "^6.0.0",
+    "jimp": "^0.16.1",
+    "node-opus": "^0.3.3",
+    "parse-ms": "^2.1.0",
+    "path": "^0.12.7",
+    "quick.db": "^7.1.3",
+    "random-puppy": "^1.1.0",
+    "superagent": "^6.1.0",
+    "weather.js": "^0.1.0",
+    "yt-search": "^2.5.2",
+    "ytdl-core": "^4.4.5"
+  }
+}
