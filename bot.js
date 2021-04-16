@@ -56,20 +56,6 @@ bot.on('message', async message => {
     if(message.content === `<@!${bot.user.id}>`){
         message.reply(`o meu prefixo é **_${config.prefix}_**`);
     }
-
-    /*
-    const fp = ['nigga', 'nigger', 'n1gga', 'n1gger', 'n1gg4', 'n1gg3r', 'nigg4', 'nigg3r'];
-    const frases = ['o bosta do', 'o doente do', 'o merda do', 'o racista de bosta do', 'o vagabundo do', 'o retardado mental do', 'o puto do', 'o infeliz do'];
-    const frase = Math.floor(Math.random() * frases.length);
-    const nha = bot.users.cache.get('609574600795357184');
-    const grumm = bot.users.cache.get('417829177757007872');
-
-    if(message.content.includes(fp)){
-        nha.send(`Ei, ${frase} <@!${message.author.id}> falou a N-Word em uma mensagem na Taverna da Nayuu! Respeito é algo que todos devemos ter com o próximo... (Conteúdo da mensagem: ${message.author.tag}: "${message.content}")`);
-        grumm.send(`Ei, ${frase} <@!${message.author.id}> falou a N-Word em uma mensagem na Taverna da Nayuu! Respeito é algo que todos devemos ter com o próximo... (Conteúdo da mensagem: ${message.author.tag}: "${message.content}")`);
-        message.author.send(`Que papo é esse de que tu falou a N-Word na Taverna da Nayuu? Já avisei pra administradora do server, beleza? Ela faz o resto do trabalho...`);
-    }
-    */
 });
 
 bot.login(config.token);
