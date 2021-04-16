@@ -47,7 +47,7 @@ module.exports = {
         .addField("Resposta:", respostas[resposta])
         .setTimestamp()
         .setThumbnail(`https://www.casadehoodoo.com/wp-content/uploads/2019/08/IMG_3011.jpeg`)
-        .setFooter(`Resposta feita por ${message.author.tag}`);
+        .setFooter(`Pergunta feita por ${message.author.tag}`);
 
         message.channel.send(embed);
     }
