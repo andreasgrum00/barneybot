@@ -13,7 +13,7 @@ module.exports = {
         const title = titles[Math.floor(Math.random() * titles.length)];
 
         const embed = new Discord.MessageEmbed()
-        .setColor("RANDOM")
+        .setColor("#6b2c85")
         .setTitle(title + ` De r/${random}`)
         .setAuthor("BarneyBot", bot.user.avatarURL())
         .setImage(img)

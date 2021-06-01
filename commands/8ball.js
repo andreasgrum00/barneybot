@@ -36,18 +36,20 @@ module.exports = {
             "Que diferença isso faz?",
             "Isso não é problema meu",
             "Sei lá",
+            "É impossível",
+            `Tu acha que isso é provável, <@!${user.id}>?`,
         ];
 
         let resposta = Math.floor(Math.random() * respostas.length);
 
         let embed = new Discord.MessageEmbed()
         .setTitle("8Ball do BarneyBot")
-        .setColor("RANDOM")
+        .setColor("#6b2c85")
         .addField("Pergunta:", pergunta)
         .addField("Resposta:", respostas[resposta])
         .setTimestamp()
         .setThumbnail(`https://www.casadehoodoo.com/wp-content/uploads/2019/08/IMG_3011.jpeg`)
-        .setFooter(`Pergunta feita por ${message.author.tag}`);
+        .setFooter(`Resposta feita por ${message.author.tag}`);
 
         message.channel.send(embed);
     }

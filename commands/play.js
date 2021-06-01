@@ -40,10 +40,11 @@ module.exports = {
             .setThumbnail()
             .setTimestamp()
             .setFooter(`Pedido de música por ${message.author.tag}`, message.author.avatarURL())
+            .setColor("#6b2c85")
 
             await message.channel.send(embed);
         } else {
-            message.channel.send(`Não encontrei nenhum vídeo sobre`);
+            message.channel.send(`Não encontrei nenhum vídeo sobre isso...`);
         }
     }
 }

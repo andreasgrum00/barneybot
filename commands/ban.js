@@ -8,7 +8,7 @@ module.exports = {
         if (!args[0]) {
             message.channel.send("Especifique qual usuário deve ser banido! Ex: !!ban @Test#3333");
             return;
-        } else if (!message.member.roles.cache.has('leru leru') && !message.member.hasPermission("BAN_MEMBERS")) {
+        } else if (!message.member.hasPermission("BAN_MEMBERS")) {
             message.channel.send("Você não tem permissão para executar esse comando!");
             return;
         }

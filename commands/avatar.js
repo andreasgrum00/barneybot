@@ -10,19 +10,22 @@ module.exports = {
         if(!m) {
             const embed = new Discord.MessageEmbed()
             .setAuthor(bot.user.tag, bot.user.avatarURL())
+            .setColor("#6b2c85")
             .setTitle(`🖼️ ${message.author.username}`)
             .setImage(message.author.avatarURL())
             .setDescription(`Clique no título para baixar a imagem!`)
-            .setURL(message.author.avatarURL({size: 2048}))
+            .setURL(message.author.avatarURL({dynamic: true, size: 2048}))
+            .setColor("#6b2c85")
             message.channel.send(embed);
-        } else {
-            const embed = new Discord.MessageEmbed()
+        }
+        const embed = new Discord.MessageEmbed()
             .setAuthor(bot.user.tag, bot.user.avatarURL())
+            .setColor("#6b2c85")
             .setTitle(`🖼️ ${m.username}`)
             .setImage(m.avatarURL())
             .setDescription(`Clique no título para baixar a imagem!`)
-            .setURL(m.avatarURL({size: 2048}))
-            message.channel.send(embed);
-        }
+            .setURL(m.avatarURL({dynamic: true, size: 2048}))
+            .setColor("#6b2c85")
+        message.channel.send(embed);
     }
 }
