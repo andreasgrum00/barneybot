@@ -41,14 +41,9 @@ bot.on('ready', async () => {
 // CHECKANDO MENSAGENS
 
 bot.on('message', async message => {
-    // COMMAND HANDLER 
-    
-    
-
-    const grumm = bot.users.cache.get('417829177757007872');
+    // COMMAND HANDLER
 
     if(message.author.bot) return;
-    if(message.channel.type === 'dm') return grumm.send(`${message.author.tag} (id: ${message.author.id}) disse: "${message.content}"`);
     
     if(message.content.startsWith(prefix)) {
         const args = message.content.slice(prefix.length).trim().split(/ +/);
