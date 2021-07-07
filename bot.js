@@ -60,13 +60,6 @@ bot.on('message', async message => {
         }
     }
 
-    if(message.content.includes(`discord.gg`)){
-        message.delete();
-        message.channel.send(`<@!${message.author.id}>, tu sabe q ngm vai entrar nesse server q tu mandou, né?`)
-        message.author.send(`Ih, ala KKKKKK. O cara acha que vai conseguir membro pra crl com divulgaçãozinha em servidor alheio KDKAWKDKWAKD. Tá enganado, feio.`);
-        grumm.send(`Ow, o ${message.author.username} (id: ${message.author.id}) mandou divulgação no server ${message.guild.name} (id: ${message.guild.id}). Agr faz o resto do trabalho e dá um mute nesse pirralho`);
-    }
-
     // AVISANDO PREFIXO
 
     if(message.content === `<@!${bot.user.id}>`) return message.reply(`o meu prefixo é **_${config.prefix}_**`);
